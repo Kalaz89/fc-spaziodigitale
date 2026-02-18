@@ -128,79 +128,67 @@ a {
    HERO SECTION (VERSIONE MIGLIORATA)
    ========================================================= */
 
-.hero {
-  height: 80vh;
-  background: url("images/astro.jpg") center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  text-align: center;
-  padding: 0 24px;
-  border-radius: 12px;
-  overflow: hidden;
+.hero { 
+   height: 55vh; /* più schiacciata */ 
+   background: url("images/astro.jpg") center/cover no-repeat; 
+   display: flex; 
+   align-items: center; /* allinea verticalmente */ 
+   position: relative; 
+   padding-left: 48px; /* testo a sinistra */ 
+   padding-right: 48px; 
+   border-radius: 12px; 
+} 
+
+/* Contenuto */ 
+.hero-content { 
+   position: relative; 
+   z-index: 2; 
+   max-width: 600px; 
+   text-align: left; /* testo a sinistra */ 
+} 
+
+/* Titolo */ 
+.hero-title { 
+   font-family: var(--font-title); 
+   font-size: 42px; margin-bottom: 12px; 
+   color: var(--color-secondary); 
+} 
+
+/* Sottotitolo */ 
+.hero-subtitle { 
+   font-size: 20px; 
+   margin-bottom: 28px; /* più spazio dal bottone */ 
+   opacity: 0.9; 
 }
 
-/* Overlay scuro per leggibilità */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  backdrop-filter: blur(2px);
-}
+/* Bottone */ 
+.hero-btn { 
+   display: inline-block; 
+   padding: 12px 28px; 
+   background: var(--color-accent); 
+   color: var(--color-bg); 
+   font-family: var(--font-title); 
+   font-size: 20px; font-weight: 700; 
+   border-radius: 10px; 
+   transition: 0.2s ease; 
+} 
 
-/* Contenuto */
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-  color: var(--color-light);
-}
+.hero-btn:hover { 
+   opacity: 0.85; 
+   transform: translateY(-3px); 
+} 
 
-/* Titolo */
-.hero-title {
-  font-family: var(--font-title);
-  font-size: 48px;
-  margin-bottom: 16px;
-  color: var(--color-secondary);
-}
-
-/* Sottotitolo */
-.hero-subtitle {
-  font-size: 22px;
-  margin-bottom: 28px;
-  opacity: 0.9;
-}
-
-/* Bottone */
-.hero-btn {
-  display: inline-block;
-  padding: 14px 32px;
-  background: var(--color-accent);
-  color: var(--color-bg);
-  font-family: var(--font-title);
-  font-size: 20px;
-  font-weight: 700;
-  border-radius: 10px;
-  transition: 0.2s ease;
-}
-
-.hero-btn:hover {
-  opacity: 0.85;
-  transform: translateY(-3px);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 34px;
-  }
-  .hero-subtitle {
-    font-size: 18px;
-  }
-}
-
+/* Responsive */ @media (max-width: 768px) { 
+   .hero { height: 45vh; 
+          padding-left: 24px; 
+          padding-right: 24px; 
+         } 
+   .hero-title { 
+      font-size: 32px; 
+   } .hero-subtitle { 
+      font-size: 18px; 
+   } 
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     color: var(--color-bg); font-family: var(--font-title); font-size: 20px; font-weight: 700; border-radius: 10px; transition: 0.2s ease; } .hero-btn:hover { opacity: 0.85; transform: translateY(-3px); } /* Responsive */ @media (max-width: 768px) { .hero { height: 45vh; padding-left: 24px; padding-right: 24px; } .hero-title { font-size: 32px; } .hero-subtitle { font-size: 18px; } }
 
 /* =========================================================
    SEZIONI TESTO + IMMAGINE AFFIANCATE
