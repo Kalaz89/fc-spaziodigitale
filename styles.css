@@ -125,7 +125,7 @@ a {
 }
 
 /* =========================================================
-   HERO SECTION (VERSIONE MIGLIORATA)
+   HERO SECTION (VERSIONE MIGLIORATA) INDEX
    ========================================================= */
 
 .hero { 
@@ -400,6 +400,11 @@ justify-items: center;
 /* =========================================================
    CONTACT FORM
    ========================================================= */
+
+#contact { 
+   margin-bottom: 40px; 
+}
+
 /* Contenitore del form */ 
 .contact-form { 
   max-width: 500px; 
