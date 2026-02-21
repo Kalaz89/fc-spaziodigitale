@@ -412,6 +412,9 @@ a {
   color: #eee;
   font-size: 16px;
   transition: border-color 0.2s ease, background 0.2s ease;
+  text-indent: 0; 
+  padding-left: 16px; 
+  margin-left: 0;
 }
 
 .contact-form input:focus,
