@@ -209,11 +209,12 @@ a {
 
 @media (max-width: 768px) { 
   .hero {
-    padding: 0 24px; /* meno spazio laterale */
+     min-height: 400px; /* opzionale */
+     padding: 0 24px; /* meno spazio laterale */
   }
   .hero-content { 
-  gap: 12px; /* SPAZIO TRA TITOLO, SOTTOTITOLO E BOTTONE */
-}
+     gap: 12px; /* SPAZIO TRA TITOLO, SOTTOTITOLO E BOTTONE */
+  }
   .hero-title {
     font-size: 24px; /* titolo più piccolo */
     margin-bottom: 4px; /* piccolo spazio sotto */
