@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /font/
+Disallow: /images/
+Disallow: /thx.html
+Sitemap: https://fcspaziodigitale.com/sitemap.xml
