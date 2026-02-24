@@ -209,6 +209,7 @@ a {
 
 @media (max-width: 768px) { 
   .hero {
+     aspect-ratio: 1 / 1; 
      min-height: 400px; /* opzionale */
      padding: 0 24px; /* meno spazio laterale */
   }
