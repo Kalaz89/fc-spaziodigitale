@@ -39,7 +39,7 @@
   padding: 0 24px;
   background: #2c3b4e;
   backdrop-filter: blur(4px);
-  min-height: 100vh; /* occupa almeno tutto lo schermo */ 
+  min-height: calc(100vh - 200px); /* 200px = altezza footer */
   display: flex; 
   flex-direction: column;
 }
@@ -77,6 +77,18 @@ a {
   background-position: center;
   z-index: -1;
 }
+
+
+/* =========================================================
+   RESPONSIVE GLOBAL
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .container {
+    min-height: auto;
+  }
+}
+
 
 /* =========================================================
    HEADER
