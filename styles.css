@@ -39,6 +39,9 @@
   padding: 0 24px;
   background: #2c3b4e;
   backdrop-filter: blur(4px);
+  min-height: 100vh; /* occupa almeno tutto lo schermo */ 
+  display: flex; 
+  flex-direction: column;
 }
 
 body {
