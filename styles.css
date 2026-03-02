@@ -39,7 +39,7 @@
   padding: 0 24px;
   background: #2c3b4e;
   backdrop-filter: blur(4px);
-  min-height: calc(100vh - 200px); /* 200px = altezza footer */
+  min-height: calc(100vh - 500px); /* 200px = altezza footer */
   display: flex; 
   flex-direction: column;
 }
