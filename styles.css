@@ -420,6 +420,7 @@ a {
   grid-template-columns: repeat(5, 1fr);;
   gap: 12px; /* spazio tra le colonne */
   color: var(--color-light);
+  margin-top: auto; /* spinge il footer in fondo */
   align-items: auto; 
   justify-items: auto;
   padding-bottom: 0; /* rimuove il padding inferiore per il copyright */
